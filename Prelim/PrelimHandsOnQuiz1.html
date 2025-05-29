@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Prelim Hands-On</title>
+		<style>
+			.heads {
+				border: 1px solid oldlace;
+				border-collapse: collapse;
+				padding: 8px;
+				padding-right: 30px;
+				color: oldlace;
+			}
+
+			.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			table {	
+				margin: 10px;
+				border-collapse: collapse;
+			} 
+			
+			td {
+				padding: 3px;
+				font-family: serif;
+				font-size: 15px;
+				color: darkslategray;
+			}
+			
+			body {
+				background-image: url(https://webgradients.com/public/webgradients_png/014%20Amy%20Crisp.png);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size:100% 100%;
+			}
+			
+			.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+			}
+			
+			.mySlides {
+				display: none;
+			} 
+			
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: navajowhite;
+				font-weight: bold;
+				font-size: 23px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+			}
+			
+			.prev {
+				left: 0;
+				border-radius: 0 3px 3px 0;
+			}
+			
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			
+			.max {
+				max-width: 850px;
+				word-wrap: break-word;
+			}
+						
+			.content {
+				text-align: justify;
+				padding-right: 15px;
+				text-indent: 50px;
+				text-shadow: 3px 3px 10px white;
+			}			
+			
+		</style>
+	</head>
+
+	<body>
+		<table class="center heads">
+			<tr>
+				<td class="heads">Name:</td>
+				<td class="heads">ASCUE, MICHAEL VINCENT C.</td>
+				<td class="heads">Topic</td>
+				<td class="heads">Introduction to HTML5</td>
+			</tr>
+
+			<tr>
+				<td class="heads">Activity No.</td>
+				<td class="heads">Hands-on Quiz 1</td>
+				<td class="heads">Date</td>
+				<td class="heads">02/19/25</td>
+			</tr>
+		</table>
+
+		<br><br><br><br>
+	
+		<table style="width:100%;">
+			<tr>
+				<th><b><h1 style="color: lemonchiffon; margin:-10px; text-shadow: 2px 2px 5px dimgray; font-family: Georgia, serif; ">QUEZON MEMORIAL CIRCLE</h1></b></th>
+
+				<th rowspan="6">
+					<div class="slideshow-container">
+						<div class="mySlides">
+							<img src="https://quezoncity.gov.ph/wp-content/uploads/2024/11/QMC-1-1.png" style="width:100%;">
+						</div>
+						
+						<div class="mySlides">
+							<img src="https://quezoncity.gov.ph/wp-content/uploads/2024/11/QMC-3.png" style="width:100%;">
+						</div>
+						
+						<div class="mySlides">
+							<img src="https://quezoncity.gov.ph/wp-content/uploads/2024/11/QMC-2.png" style="width:100%;">
+						</div>
+						
+						<div class="mySlides">
+							<img src="https://quezoncity.gov.ph/wp-content/uploads/2024/11/QMC-4.png" style="width:100%;">
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+						<a class="next" onclick="plusSlides(1)">&#10095</a>
+					</div>
+				</th>
+			</tr>
+			
+			<tr>
+				<th><h2 style="margin:-4px; padding-bottom: 20px; color: oldlace; text-shadow: 2px 2px 5px dimgray; font-family: courier;">- - - - - -NATIONAL PARK- - - - - -</h2></th>
+			</tr>
+
+			<tr>
+			</tr>
+				<td class="max content">A prominent landmark located within a large elliptical traffic circle bounded by the Elliptical Road. A historical urban park and a national landmark. At its heart stands a towering 66-meter-tall mausoleum, which houses Quezon's remains. The park features lush gardens, cultural exhibits, recreational facilities, and a vibrant weekend market, making it a popular destination for both locals and tourists.</td>
+
+			<tr>
+				<td class="max content">The Circle stands as an honor to the legacy of the late Manuel L. Quezon, the first President of the Commonwealth of the Philippines. Its history dates back to the mid-20th century. The place was originally conceived as the site for the National Capitol, intended to house the Congress of the Philippines. However, after the second World War, then President Sergio Osmeña issued Executive Order 79, creating a committee to raise funds for the memorial. The design by architect Federico S. Ilustre features the 66-meter-tall mausoleum, representing Quezon's age at his death, and three vertical pulons symbolizing the country's main geographic divisions: Luzon, Visayas, and Mindanao. The monument was completed in 1978, and Quezon's remains were reinterred there in 1979.
+				</td>
+			</tr>
+
+			<tr>
+				<td class="max content">As a child, I used to frequent this place with my grandfather. This place was one way we bonded. It was easy to go there since we live only a few minutes away. We would spend some of our Sunday mornings there and stay until we eat our lunch. I remember most of our routine when we go there. We would first park near the plant shops and my grandfather would shop for some house plants. After that, he'd take me to the bicycle track (which I remember would only be around 50 pesos for 30 mins.). If it was still quite early, we would sometimes ride a swan boat after I bike. We would walk around the park as a way to destress. At around lunch time, we would look through the food stalls. One of my fondest memories was eating grilled fish barehanded. Although the last time I went here with my grandfather was morethan 10 years ago already, I consider this place as one of my favorite places because it reminds me of my grandfather.</td>
+			</tr>
+		</table>
+		
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				
+				
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				
+				slides[slideIndex-1].style.display = "block";  
+
+			}
+		</script>
+	</body>
+</html>
+

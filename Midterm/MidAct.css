@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    margin: 30px;
+    background: #e4dada;
+}
+
+.container {
+    max-width: 1000px;  
+    margin: auto;
+    border: 2px dotted black;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:-15px;
+}
+
+.header h2 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.header p{
+    margin-top: 5px;
+}
+
+.row, .rowname {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.rowname {
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    padding-right: 10px;
+    min-width: 200px;
+}
+
+.cols{
+    display: flex;
+    flex-direction: column;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.inline label {
+    display: inline-block;
+    width: 130px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"] {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    padding: 2px 2px;
+    font-size: 14px;
+    outline: none;
+}
+
+.checkbox-group {
+    margin-bottom: 10px;
+}
+
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0 10px;
+    padding-bottom: 5px;
+}
+
+#status {
+    font-weight: bold;
+}
+
+.parents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indivparent {
+    flex: 1;
+    justify-content: space-between;
+}
